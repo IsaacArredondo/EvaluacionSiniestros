@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predicción con XGBoost</title>
+    <style>
+        body {
+            background-image: url(https://www.moneyweb.co.za/wp-content/uploads/2014/10/shutterstock_422256799-1024x683.jpg);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        .prediction-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .prediction-text {
+            color: #333;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .prediction-result {
+            color: red;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="prediction-container">
+        <h1>Resultado de la predicción</h1>
+        <p class="prediction-text">La predicción del número de siniestros para el dia {{ dayofyear }} del año {{year}} es:</p>
+        <p class="prediction-result">{{ prediction }}</p>
+    </div>
+</body>
+</html>
